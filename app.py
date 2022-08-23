@@ -58,7 +58,7 @@ def index():
     pred_value = prediction(feature_list)
     pred_value = np.round(pred_value[0],2)*300
     val = {"prediction": pred_value}
-    return jsonify(pred_value)
+    return jsonify(val)
 
 
 
